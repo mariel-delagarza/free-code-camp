@@ -1,0 +1,130 @@
+header {
+  align-content: stretch;
+}
+#header-img {
+  min-width: 360px;
+  max-width: 75%;
+  height: auto;
+}
+#restaurant-name {
+  padding: 5px;
+  color: black;
+  font-family: 'Rock Salt', cursive;
+  font-size: 10vh;
+}
+#nav-bar {
+  background-color: #131417;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nav-link {
+  color: white;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+
+#historia {
+  font-family: 'Roboto Slab', serif;
+  max-width: 800px;
+  font-size: 3vh;
+  margin: auto;
+  text-align: justify;
+}
+#history-section-title {
+  text-align: center;
+  font-size: 10vh;
+}
+
+#tacos {
+  background-color: orange;
+  font-family: 'Roboto Slab', serif;
+  margin: 0px;
+  font-size: 3vh;
+}
+#taco-section-title {
+  text-align: center;
+  font-size: 10vh;
+  padding: 10px;
+}
+.taco-container {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 25px;
+  margin: auto auto;
+  padding-bottom: 20px;
+}
+.taco-photo {
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  display: block;
+}
+
+#cocktails {
+  font-family: 'Roboto Slab', serif;
+  max-width: 800px;
+  font-size: 5vh;
+  margin: auto;
+  text-align: justify;
+}
+#cocktail-section-title {
+  text-align: center;
+  font-size: 10vh;
+  padding: 10px;
+}
+
+#noticias{
+  background-color: orange;
+  font-family: 'Roboto Slab', serif;
+  font-size: 5vh;
+  margin: auto;
+  text-align: justify;
+  padding-bottom: 30px;
+}
+#news-section-title {
+  text-align: center;
+  font-size: 10vh;
+  padding: 10px;
+}
+.btn {
+  padding: 0 20px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: yellow;
+  cursor: pointer;
+}
+#email {
+  padding: 0 20px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: yellow;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #nav-bar{
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}

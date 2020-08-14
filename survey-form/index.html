@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Good Dog Survey</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cutive&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+
+<body>
+  <div>
+    <h1 id="title">Good Dogs</h1>
+    <p id="description">A Dog Ownership Experience Survey</p>
+  </div>
+  <div id="container">
+    <form id="survey-form">
+      <div id="form-container">
+        <label id="name-label">*Name:</label>
+        <input autofocus id="name" type="text" name="Name" class="input-field" placeholder="Enter your full name here"
+          required />
+        <br />
+        <br />
+        <label id="email-label" for="email">*Email:</label>
+        <input type="email" name="email" id="email" class="input-field" placeholder="youraddress@email.com" required />
+        <br />
+        <br />
+        <label id="number-label" for="Dog-Number">*Number of Dogs you Own:</label>
+        <input type="number" name="number-of-dogs" id="number" min="0" max="150" class="input-field"
+          placeholder="Number of dogs you own" required />
+        <br />
+        <br />
+        <label for="experience">Which option describes your experience?</label>
+        <select id="dropdown" name="experience" class="dropdown">
+          <option disabled value>Select an option</option>
+          <option value="new">New Dog Owner</option>
+          <option value="experienced">Experienced Dog Owner</option>
+          <option value="never">Never Owned a Dog</option>
+        </select>
+        <br />
+        <br />
+        <label for="want">Do you want a dog?</label>
+        <input type="checkbox" value="yes"> Yes </input>
+        <input type="checkbox" value="no"> No </input>
+        <br />
+        <br />
+        <label for="prevent">What prevents you from getting a dog if you want one? Select all that apply:</label>
+        <ul>
+          <input name="prevent" value="1" type="radio" class="UserPrevention">
+          <label>Space in home</label>
+          <br />
+          <input name="prevent" value="2" type="radio" class="UserPrevention">
+          <label>Time</label>
+          <br />
+          <input name="prevent" value="3" type="radio" class="UserPrevention">
+          <label>Money</label>
+          <br />
+          <input name="prevent" value="1" type="radio" class="UserPrevention">
+          <label>Don't Want One</label>
+        </ul>
+
+        <label for="stories">Tell us any story you would like about a very good dog:</label>
+        <br />
+        <textarea id="stories" style="resize:vertical;" name="dogStories"
+          placeholder="Tell your story here..."></textarea>
+
+        <br />
+        <button id="submit" type="submit">Submit</button>
+
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
